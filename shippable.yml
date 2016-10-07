@@ -1,0 +1,15 @@
+language: java
+
+jdk:
+  - openjdk7
+  - oraclejdk7
+  - openjdk6
+  - oraclejdk8
+
+after_success:
+  - mvn package
+
+notifications:
+  email:
+    recipients:
+      -b.carroll6@nuigalway.ie
